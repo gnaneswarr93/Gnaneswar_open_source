@@ -1,4 +1,4 @@
-# Function to add a new user
+
 def add_user(name, email):
     conn = sqlite3.connect('library.db')
     cursor = conn.cursor()
@@ -6,7 +6,6 @@ def add_user(name, email):
     conn.commit()
     conn.close()
 
-# Function to issue a book to a user
 def issue_book(user_id, book_id):
     conn = sqlite3.connect('library.db')
     cursor = conn.cursor()
